@@ -1,24 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Tilt+Warp&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.encabezado{
-    margin-left: 50%;
-}
+body{background:url(../libreria/prueba1.jpg);background-repeat: no-repeat;width: 100%;}
 
 .navegacion{
-    width: 100%;
-    height: 80px;
+    width: 100vw;
+    height: 90px;
     display: flex;
-    background-color: rgb(0, 162, 255);
+    background-color: rgb(110, 110, 110);
+    padding: 50px;
+    justify-content: space-between;
+    
+    
+}
+.franjaSuperior{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.superior{
+    display: flex;
+    justify-content: space-between;
 }
 
-.navgvar{
+.logo{
     display: flex;
-    text-decoration: none;
+    width: 150px;
     
+}
+.logoIngresa{
+    display: flex;    
+    
+}
+
+.ingresar{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    text-decoration: none;    
+}
+
+.fa-solid{
+    color: aliceblue;
+} 
+
+
+.categorias{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    padding-left: 50px;
+}
+
+.filtrar{
+
+    color: aliceblue;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    text-decoration:none ;
+    list-style: none;
+}
+
+.lista{
+    margin: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.botonEnviar{
+    width: 100%;
+    height: 50%;
+    font-size: 50px;
+}
+
+.botonEnviar{
+    color: brown;
+}
+.button{
+    width: 100%;
+    height: 50%;    
+    font-size: 20px;
+    transition: all 0.1s ease-in;  
+}
+.button:hover{
+    background-color: rgb(247, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .textos{
     text-decoration: none;
@@ -28,16 +103,19 @@
     display: flex;
 }
 
-.inicio{
-    text-decoration: none;
-    color: aliceblue;
-    display: flex;
+.contenedorGrid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 85% ;
+    grid-template-rows: 100% 10% ;
+    grid-template-areas: "seccion main"
+                         "footer footer";
 
 }
 
 .fornulario{
 max-width: 400px;
-background-color: rgb(0, 162, 255);
+background-color: rgb(126, 126, 126);
 margin: 20px;
 padding:  20px;
 display: flex;
@@ -45,25 +123,84 @@ flex-direction: column;
 gap: 10px;
 }
 
-.tarjetaProducto{
+.tarjeta{
     display: flex;
     width: 50%;
-    border: 5px solid;color: rgb(0, 153, 255);
+    border: 5px solid;color: rgb(17, 17, 17);
     margin: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;    
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);    
 }
-.tarjetaProducto img{
+.tarjeta img{
     width: inherit;
+    height: 150px;
+    object-fit: cover;
 
+}
+
+.tarjeta button{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(17, 17, 17);
+    color: aliceblue;
+    padding: 10px 20px;
+}
+
+.tarjeta button:hover{
+    background-color: rgb(248, 0, 0);
+}
+.barraBuscador{
+    display: flex;
+    width: 20px;   
+    padding: 25px;
+    font-size: 25px;
+}
+
+.textoImput{
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.fa-solid {
+    padding-left: 10px;
+
+}
+.seccion{
+    background-color: rgb(0, 0, 0);
+    grid-area: seccion;
 }
 
 #contendorProductos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-around;   
+}
+
+.tarjeta{
+width: 250px;
+border: 1px solid;
+border-radius: 5px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin: 10px;
+padding: 10px;
+
+}
+
+.tarjeta img{
+ width: inherit;
+ height: 150px;
+ object-fit: cover;
+ 
+}
+
+.footer{
+   background-color: rgb(0, 0, 0);
 }

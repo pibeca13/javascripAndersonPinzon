@@ -6,24 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/stilos.css">
+    <script src="https://kit.fontawesome.com/8fa664dc43.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body>    
     <header class="navegacion">
-        <nav>            
-                              
+        <nav class="franjaSuperior">            
+        <div class="superior">             
+        <img src="./libreria/logo.png" alt="" class="logo" href="index.html">             
+        </div>
+        <div class="logoIngresa">
+            <i class="fa-solid fa-user"></i>
+            <a class="ingresar" href="#">| INGRESAR</a>           
+        </div>                      
         </nav>
     </header>
-    <main> 
-    <section id="encabezado">
-        <h1 id="titulo"></h1>
-        </section>
-    <section>
-        <div id="contendorProductos">          
-        </div>        
-    </section>               
+<div class="contenedorGrid">
+    <main>  
+        <div id="contendorProductos"></div>                  
     </main>
-    <footer>        
-    </footer>    
-    <script src="./js/main.js"></script>    
+    <section class="seccion">
+        <div class="barraBuscador">
+            <input type="text" placeholder="escriba su nombre" class="textoImput">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <br>        
+        <div class="categorias">
+        CATEGORIAS
+        </div>
+        <form action="" class="filtrar" id="form">
+            <ul>
+                <input type="radio" name="for" class="lista">
+                <label for="" class="lista">Procesador</label>                            
+            <br>
+            <input type="radio" name="for" class="lista">
+            <label for="" class="lista">Board</label>                
+            <br>
+            <input type="radio" name="for" class="lista"> 
+            <label for="" class="lista">Tarjeta de video</label>            
+            <br>
+            <input type="radio" name="for" class="lista"> 
+            <label for="" class="lista">Diadema</label> 
+            <br> 
+            <input type="radio" name="for" class="lista"> 
+            <label for="" class="lista">Torre</label> 
+            <br>
+            <input type="radio" name="for" class="lista"> 
+            <label for="" class="lista">Teclados</label> 
+            <br> 
+            <input type="radio" name="for" class="lista"> 
+            <label for="" class="lista">Mouse</label> 
+            <br>
+            <input type="radio" name="for" class="lista"> 
+            <label for="" class="lista">Monitores</label> 
+            <br>
+            <div class="botonEnviar">          
+            <input type="submit" value="Filtrar" class="button"></input> 
+            </div>         
+            </ul>
+
+      </form>     
+    </section>
+    <footer class ="footer"> 
+           
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+<script src="./js/main.js"></script>    
 </body>
 </html>
